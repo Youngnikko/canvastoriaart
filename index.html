@@ -33,106 +33,111 @@
 
 /* Reset some default styles */
         
-        <style> 
-            
-body, html {
-    margin: 0;
-    padding: 0;
-}
+          <style>
+        /* Reset some default styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
 
-/* Set a minimum height for the body to ensure the slideshow covers the entire viewport */
-body {
-    min-height: 100vh;
-}
+        /* Set a minimum height for the body to ensure the slideshow covers the entire viewport */
+        body {
+            min-height: 100vh;
+        }
 
-/* Style the slideshow container */
-#bs {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
+        /* Style the slideshow container */
+        #bs {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex; /* Added flex display */
+            align-items: center; /* Center items vertically */
+        }
 
-/* Style the slides */
-.slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: none;
-}
+        /* Style the slides */
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: none;
+        }
 
-/* Style the shop now button */
-.bs-btn label {
-    display: block;
-    padding: 10px 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #3498DB;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    cursor: pointer;
-}
+        /* Style the shop now button */
+        .bs-btn label {
+            display: block;
+            padding: 10px 20px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #3498DB;
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-.bs-btn label:hover {
-    background-color: #297FB8;
-}
+        .bs-btn label:hover {
+            background-color: #297FB8;
+        }
 
-/* Style the text elements */
-.element .text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    color: #ffffff;
-    text-align: center;
-}
+        /* Style the text elements */
+        .element .text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            color: #ffffff;
+            text-align: center;
+        }
 
-.element .text.boundary {
-    word-wrap: normal;
-}
+        .element .text.boundary {
+            word-wrap: normal;
+        }
 
-/* Style the Christmas heading */
-.element .text.heading {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-    font-size: 42px;
-    line-height: 1.2;
-    color: #ffffff;
-    text-align: center;
-    text-shadow: 1px 2px 3px rgba(22, 22, 22, 0.5);
-}
+        /* Style the Christmas heading */
+        .element .text.heading {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 1.2;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 1px 2px 3px rgba(22, 22, 22, 0.5);
+        }
 
-/* Style the festive deals text */
-.element .text.subheading {
-    font-size: 22px;
-    color: #ffffff;
-    text-align: center;
-    text-shadow: 1px 1px 2px rgba(22, 22, 22, 0.5);
-}
+        /* Style the festive deals text */
+        .element .text.subheading {
+            font-size: 22px;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(22, 22, 22, 0.5);
+        }
 
-/* Style the images */
-.element .layerType-image {
-    width: 100%;
-    height: auto;
-}
+        /* Style the images */
+        .element .layerType-image {
+            width: 100%;
+            height: auto;
+        }
 
-/* Add styles for responsiveness */
-@media screen and (max-width: 768px) {
-    .element .text.heading {
-        font-size: 32px;
-    }
+        /* Add styles for responsiveness */
+        @media screen and (max-width: 768px) {
+            #bs {
+                flex-direction: column; /* Stack items vertically on small screens */
+            }
 
-    .element .text.subheading {
-        font-size: 18px;
-    }
+            .element .text.heading {
+                font-size: 32px;
+            }
 
-    .bs-btn label {
-        font-size: 14px;
-    }
-}
-            
-</style> 
+            .element .text.subheading {
+                font-size: 18px;
+            }
+
+            .bs-btn label {
+                font-size: 14px;
+            }
+        }
+    </style>
         
     </head>
     <body><noscript><a href="" target="_blank"><img style="height:100%;width:100%;display:block;" src="media/fallback-image.jpg" alt="" /></a></noscript><div id="bs"></div></body>
